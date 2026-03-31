@@ -1,0 +1,17 @@
+  /* ── SERVICES ── */
+  .services { background: var(--dark); }
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: rgba(184,151,58,0.1); }
+  .service-card { background: var(--dark); padding: 48px 40px; transition: background 0.4s; position: relative; overflow: hidden; display: block; text-decoration: none; color: inherit; }
+  .service-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--gold); transform: scaleX(0); transition: transform 0.4s; transform-origin: left; }
+  .service-card::after { content: '→'; position: absolute; bottom: 40px; right: 40px; font-size: 15px; color: rgba(184,151,58,0); transition: color 0.3s, transform 0.3s; }
+  .service-card:hover { background: var(--dark-3); }
+  .service-card:hover::before { transform: scaleX(1); }
+  .service-card:hover::after { color: var(--gold-light); transform: translateX(4px); }
+  .service-num { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 300; color: rgba(184,151,58,0.15); line-height: 1; margin-bottom: 32px; }
+  .service-title { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 400; color: var(--white); margin-bottom: 16px; }
+  .service-desc { font-size: 13px; line-height: 1.9; color: rgba(240,235,225,0.80); margin-bottom: 56px; }
+  .service-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+  .tag { font-size: 10px; letter-spacing: 0.1em; padding: 5px 12px; border: 1px solid rgba(184,151,58,0.3); color: var(--gold); }
+  .section-more { margin-top: 36px; text-align: right; }
+  .section-more a { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); text-decoration: none; transition: gap 0.3s, color 0.3s; }
+  .section-more a:hover { gap: 14px; color: var(--gold-light); }
