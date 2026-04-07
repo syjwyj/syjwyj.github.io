@@ -2,9 +2,9 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>서비스 안내 · 손영준 PB 자산관리</title>
-<meta name="description" content="19년 경력 PB 팀장 손영준의 재무진단, 투자 컨설팅, 절세 전략 서비스 안내">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>고객 후기 · 손영준 PB 자산관리</title>
+<meta name="description" content="손영준 PB 팀장과 상담을 경험한 고객들의 생생한 후기입니다.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Serif+KR:wght@300;400;600&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root{--gold:#c9a96e;--gold-light:#e8d5b0;--gold-dim:rgba(201,169,110,.15);--dark:#0b0b0b;--dark-2:#111;--dark-3:#181818;--dark-4:#1e1e1e;--text:#e8e4dc;--text-dim:rgba(232,228,220,.55);--radius:16px}
@@ -13,7 +13,6 @@ html{scroll-behavior:smooth}
 body{background:var(--dark);color:var(--text);font-family:'Noto Sans KR',sans-serif;font-weight:300;line-height:1.8;overflow-x:hidden}
 ::selection{background:var(--gold);color:var(--dark)}
 
-/* ── NAV ── */
 nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(11,11,11,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--gold-dim)}
 .nav-inner{max-width:1200px;margin:0 auto;padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between}
 .nav-logo{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--gold);text-decoration:none;letter-spacing:2px}
@@ -28,84 +27,61 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(11,11,11,.8
 .nav-toggle{display:flex}
 }
 
-/* ── HERO ── */
-.hero{padding:160px 40px 100px;text-align:center;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(201,169,110,.06) 0%,transparent 70%);pointer-events:none}
-.hero-label{font-size:.75rem;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:24px;opacity:.7}
-.hero h1{font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.5;margin-bottom:24px}
+.hero{padding:150px 40px 80px;text-align:center}
+.hero-label{font-size:.7rem;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:20px;opacity:.7}
+.hero h1{font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(1.6rem,3.5vw,2.4rem);line-height:1.5;margin-bottom:16px}
 .hero h1 em{font-family:'Playfair Display',serif;color:var(--gold);font-style:italic}
-.hero>p{color:var(--text-dim);font-size:.95rem;line-height:2;max-width:520px;margin:0 auto 40px}
-.hero-tabs{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
-.hero-tabs a{padding:12px 28px;border:1px solid var(--gold-dim);border-radius:40px;color:var(--gold);text-decoration:none;font-size:.85rem;transition:all .3s}
-.hero-tabs a:hover{background:var(--gold);color:var(--dark);border-color:var(--gold)}
-.hero-divider{width:60px;height:1px;background:var(--gold-dim);margin:60px auto 0}
+.hero>p{color:var(--text-dim);font-size:.9rem;line-height:2;max-width:480px;margin:0 auto}
+.hero-divider{width:60px;height:1px;background:var(--gold-dim);margin:50px auto 0}
 
-/* ── BADGE ROW ── */
-.badges{display:flex;justify-content:center;gap:48px;padding:50px 40px;flex-wrap:wrap}
-.badge{text-align:center}
-.badge-value{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--gold);margin-bottom:4px}
-.badge-label{font-size:.75rem;color:var(--text-dim);letter-spacing:1px}
+.stats-row{display:flex;justify-content:center;gap:60px;padding:40px 40px 60px;flex-wrap:wrap}
+.stat{text-align:center}
+.stat-num{font-family:'Playfair Display',serif;font-size:2rem;color:var(--gold)}
+.stat-label{font-size:.75rem;color:var(--text-dim);margin-top:4px;letter-spacing:1px}
 
-/* ── SECTION COMMON ── */
-.section{max-width:1000px;margin:0 auto;padding:80px 40px}
+.reviews-section{max-width:900px;margin:0 auto;padding:0 40px 80px}
 .section-eyebrow{font-size:.7rem;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:12px;opacity:.7}
-.section-title{font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(1.4rem,3vw,2rem);margin-bottom:16px;line-height:1.5}
+.section-title{font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(1.3rem,2.5vw,1.8rem);margin-bottom:48px;line-height:1.5}
 .section-title em{font-family:'Playfair Display',serif;color:var(--gold);font-style:italic}
-.section-desc{color:var(--text-dim);font-size:.9rem;line-height:1.9;margin-bottom:48px;max-width:600px}
 
-/* ── STEPS ── */
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;margin-bottom:48px}
-.step{background:var(--dark-3);border:1px solid var(--gold-dim);border-radius:var(--radius);padding:32px 24px;position:relative;transition:border-color .3s}
-.step:hover{border-color:var(--gold)}
-.step-num{font-family:'Playfair Display',serif;font-size:2rem;color:var(--gold);opacity:.3;margin-bottom:12px}
-.step h4{font-family:'Noto Serif KR',serif;font-weight:400;font-size:1rem;margin-bottom:10px}
-.step p{font-size:.82rem;color:var(--text-dim);line-height:1.8}
+.review-card{background:var(--dark-3);border:1px solid var(--gold-dim);border-radius:var(--radius);padding:36px 32px;margin-bottom:24px;position:relative;transition:border-color .3s}
+.review-card:hover{border-color:rgba(201,169,110,.35)}
+.review-quote{font-size:.7rem;color:var(--gold);opacity:.3;font-family:'Playfair Display',serif;position:absolute;top:20px;left:28px;font-size:2.5rem;line-height:1}
+.review-text{font-family:'Noto Serif KR',serif;font-size:.92rem;line-height:2;color:var(--text);margin-bottom:20px;padding-top:16px}
+.review-meta{display:flex;align-items:center;gap:12px}
+.review-avatar{width:40px;height:40px;border-radius:50%;background:var(--dark-4);border:1px solid var(--gold-dim);display:flex;align-items:center;justify-content:center;font-size:.85rem;color:var(--gold)}
+.review-info{display:flex;flex-direction:column}
+.review-name{font-size:.82rem;color:var(--text);font-weight:400}
+.review-detail{font-size:.72rem;color:var(--text-dim)}
+.review-stars{margin-left:auto;color:var(--gold);font-size:.8rem;letter-spacing:2px}
 
-/* ── QUOTE ── */
-.quote-block{background:var(--dark-3);border-left:3px solid var(--gold);border-radius:0 var(--radius) var(--radius) 0;padding:32px 36px;margin:48px 0;position:relative}
-.quote-block p{font-family:'Noto Serif KR',serif;font-size:.95rem;line-height:2;color:var(--text);font-weight:300}
-.quote-block .quote-source{font-size:.78rem;color:var(--gold);margin-top:16px;font-family:'Noto Sans KR',sans-serif}
+.divider{width:60px;height:1px;background:var(--gold-dim);margin:60px auto}
 
-/* ── COMPARE TABLE ── */
-.compare-wrap{overflow-x:auto;margin:48px 0}
-.compare-wrap h3{font-family:'Noto Serif KR',serif;font-weight:400;font-size:1.15rem;margin-bottom:24px}
-.compare-wrap h3 em{color:var(--gold);font-style:normal}
-table{width:100%;border-collapse:collapse;font-size:.85rem}
-thead th{background:var(--dark-4);color:var(--gold);padding:14px 18px;text-align:left;font-weight:400;letter-spacing:.5px;border-bottom:1px solid var(--gold-dim)}
-thead th:first-child{border-radius:var(--radius) 0 0 0}
-thead th:last-child{border-radius:0 var(--radius) 0 0}
-tbody td{padding:14px 18px;border-bottom:1px solid rgba(255,255,255,.04);color:var(--text-dim);vertical-align:top;line-height:1.7}
-tbody tr:last-child td{border-bottom:none}
-tbody tr:hover td{background:rgba(201,169,110,.03)}
-tbody td:first-child{color:var(--text);font-weight:400}
-
-/* ── CTA SECTION ── */
-.cta{text-align:center;padding:100px 40px;position:relative}
-.cta::before{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:500px;height:500px;background:radial-gradient(circle,rgba(201,169,110,.05) 0%,transparent 70%);pointer-events:none}
-.cta-label{font-size:.7rem;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:20px;opacity:.6}
-.cta h2{font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(1.4rem,3vw,2rem);line-height:1.6;margin-bottom:20px}
+.cta{text-align:center;padding:60px 40px 100px}
+.cta h2{font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(1.3rem,2.5vw,1.8rem);line-height:1.6;margin-bottom:16px}
 .cta h2 em{font-family:'Playfair Display',serif;color:var(--gold);font-style:italic}
-.cta>p{color:var(--text-dim);font-size:.9rem;line-height:2;max-width:440px;margin:0 auto 36px}
+.cta>p{color:var(--text-dim);font-size:.88rem;line-height:2;max-width:420px;margin:0 auto 32px}
 .btn-gold{display:inline-block;padding:16px 44px;background:linear-gradient(135deg,var(--gold),#b8933e);color:var(--dark);font-weight:500;font-size:.9rem;border-radius:40px;text-decoration:none;letter-spacing:1px;transition:transform .3s,box-shadow .3s}
 .btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,169,110,.25)}
 
-/* ── FOOTER ── */
 footer{text-align:center;padding:40px 20px;font-size:.72rem;color:var(--text-dim);letter-spacing:1px;border-top:1px solid var(--gold-dim)}
 
-/* ── DIVIDER ── */
-.sec-divider{width:60px;height:1px;background:var(--gold-dim);margin:0 auto}
+@media(max-width:600px){
+.review-card{padding:28px 20px}
+.stats-row{gap:36px}
+}
 </style>
 </head>
 <body>
 
-<!-- ===== NAV ===== -->
+<!-- NAV -->
 <nav>
 <div class="nav-inner">
   <a href="index.html" class="nav-logo">YJ · SON</a>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html#about">소개</a></li>
-    <li><a href="services.html" class="active">서비스</a></li>
-    <li><a href="reviews.html">후기</a></li>
+    <li><a href="services.html">서비스</a></li>
+    <li><a href="reviews.html" class="active">후기</a></li>
     <li><a href="columns.html">칼럼</a></li>
     <li><a href="consult.html">상담 신청</a></li>
   </ul>
@@ -113,162 +89,109 @@ footer{text-align:center;padding:40px 20px;font-size:.72rem;color:var(--text-dim
 </div>
 </nav>
 
-<!-- ===== HERO ===== -->
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-label">Services</div>
-  <h1>단순한 상품 권유가 아닌<br><em>진짜 파트너십</em></h1>
-  <p>금융은 복잡합니다. 하지만 복잡하게 느껴지는 이유는<br>아무도 제대로 설명해주지 않았기 때문입니다.<br>저는 이유와 맥락까지 함께 설명합니다.</p>
-  <div class="hero-tabs">
-    <a href="#diagnosis">재무 진단 &amp; 설계</a>
-    <a href="#investment">투자 상품 컨설팅</a>
-    <a href="#tax">세금 &amp; 절세 전략</a>
-  </div>
+  <div class="hero-label">Client Reviews</div>
+  <h1>숫자가 아닌 신뢰로<br><em>증명합니다</em></h1>
+  <p>손영준 팀장과 상담을 경험한 고객분들의<br>솔직한 이야기를 들어보세요.</p>
   <div class="hero-divider"></div>
 </section>
 
-<!-- ===== BADGES ===== -->
-<div class="badges">
-  <div class="badge"><div class="badge-value">AFPK</div><div class="badge-label">국가공인 재무설계사</div></div>
-  <div class="badge"><div class="badge-value">VIP</div><div class="badge-label">전문 자산관리</div></div>
-  <div class="badge"><div class="badge-value">98%</div><div class="badge-label">고객 신뢰도</div></div>
+<!-- STATS -->
+<div class="stats-row">
+  <div class="stat"><div class="stat-num">19년</div><div class="stat-label">업계 경력</div></div>
+  <div class="stat"><div class="stat-num">3,000+</div><div class="stat-label">상담 고객</div></div>
+  <div class="stat"><div class="stat-num">98%</div><div class="stat-label">고객 만족도</div></div>
 </div>
 
-<div class="sec-divider"></div>
+<!-- REVIEWS -->
+<section class="reviews-section">
+  <div class="section-eyebrow">Testimonials</div>
+  <h2 class="section-title">고객분들의 <em>생생한 후기</em></h2>
 
-<!-- ===== 1. 재무 진단 & 설계 ===== -->
-<section class="section" id="diagnosis">
-  <div class="section-eyebrow">Financial Diagnosis</div>
-  <h2 class="section-title">상담 진행 방식</h2>
-
-  <div class="steps">
-    <div class="step">
-      <div class="step-num">01</div>
-      <h4>사전 진단</h4>
-      <p>사전 설문과 양식을 통해 현재 수입·지출·자산·부채를 파악합니다.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">02</div>
-      <h4>1:1 심층 상담</h4>
-      <p>작성하신 내용을 토대로 현재 재무 흐름과 고민을 함께 분석합니다.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">03</div>
-      <h4>목표 설정</h4>
-      <p>단기·중기·장기 목표를 구체적으로 수치화하여 계획을 세웁니다.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">04</div>
-      <h4>로드맵 제공</h4>
-      <p>실천 가능한 맞춤형 재무 플랜을 문서로 정리해 전달드립니다.</p>
+  <!-- 후기 1 -->
+  <div class="review-card">
+    <div class="review-quote">"</div>
+    <p class="review-text">스스로 재무 상태를 점검해보니 불필요한 소비도 체크해보게 됐고, 보유 중인 자산 중 변환이 필요한 자산을 확인할 수 있었어요. 재테크 목표와 방향을 구체적으로 설정하니 그에 맞는 현실적인 계획을 세울 수 있었습니다.</p>
+    <div class="review-meta">
+      <div class="review-avatar">A</div>
+      <div class="review-info">
+        <span class="review-name">A님</span>
+        <span class="review-detail">재무설계 상담</span>
+      </div>
+      <div class="review-stars">★★★★★</div>
     </div>
   </div>
 
-  <div class="quote-block">
-    <p>스스로 재무 상태를 점검해보니 불필요한 소비도 체크해보게 됐고 보유중인 자산 중 변환이 필요한 자산을 확인할 수 있었어요. 재테크 목표와 방향을 구체적으로 설정하니 그에 맞는 현실적인 계획을 세울 수 있었습니다.</p>
-    <div class="quote-source">실제 고객 후기</div>
+  <!-- 후기 2 -->
+  <div class="review-card">
+    <div class="review-quote">"</div>
+    <p class="review-text">단순히 상품을 가입하라는 권유가 아니라, 제 연령대의 고민을 짚어내고 상황에 맞지 않는 부분은 솔직하게 말씀해주셔서 확실한 신뢰가 생겼습니다. 이제 제 자산 현황을 객관적으로 파악할 수 있게 됐어요.</p>
+    <div class="review-meta">
+      <div class="review-avatar">B</div>
+      <div class="review-info">
+        <span class="review-name">B님</span>
+        <span class="review-detail">30대 직장인 · 투자 컨설팅</span>
+      </div>
+      <div class="review-stars">★★★★★</div>
+    </div>
   </div>
+
+  <!-- 후기 3 -->
+  <div class="review-card">
+    <div class="review-quote">"</div>
+    <p class="review-text">연금과 세금 정리를 한번에 도움받았어요. 제가 얼마나 세금을 더 내고 있었는지 몰랐는데, 체계적인 절세 전략 덕분에 연간 수십만 원을 아끼게 되었습니다. 진작 찾아올 걸 그랬어요!</p>
+    <div class="review-meta">
+      <div class="review-avatar">C</div>
+      <div class="review-info">
+        <span class="review-name">C님</span>
+        <span class="review-detail">50대 직장인 · 절세 컨설팅</span>
+      </div>
+      <div class="review-stars">★★★★★</div>
+    </div>
+  </div>
+
+  <!-- 후기 4 -->
+  <div class="review-card">
+    <div class="review-quote">"</div>
+    <p class="review-text">다른 곳에서는 자기 회사 상품만 추천하는 느낌이었는데, 손영준 팀장님은 여러 금융사 상품을 비교해서 설명해 주셔서 진짜 고객을 위한 상담이라는 게 느껴졌어요. 무엇보다 어려운 금융 용어를 쉽게 풀어주시는 게 인상적이었습니다.</p>
+    <div class="review-meta">
+      <div class="review-avatar">D</div>
+      <div class="review-info">
+        <span class="review-name">D님</span>
+        <span class="review-detail">40대 자영업 · 종합 자산관리</span>
+      </div>
+      <div class="review-stars">★★★★★</div>
+    </div>
+  </div>
+
+  <!-- 후기 5 -->
+  <div class="review-card">
+    <div class="review-quote">"</div>
+    <p class="review-text">결혼 자금 마련부터 내 집 마련 로드맵까지 구체적으로 짜주셔서 막막했던 마음이 한결 가벼워졌어요. 매달 얼마를 어디에 넣어야 하는지 명확해지니까 실천하기가 훨씬 수월해졌습니다.</p>
+    <div class="review-meta">
+      <div class="review-avatar">E</div>
+      <div class="review-info">
+        <span class="review-name">E님</span>
+        <span class="review-detail">20대 후반 · 재무설계</span>
+      </div>
+      <div class="review-stars">★★★★★</div>
+    </div>
+  </div>
+
 </section>
 
-<div class="sec-divider"></div>
+<div class="divider"></div>
 
-<!-- ===== 2. 투자 상품 컨설팅 ===== -->
-<section class="section" id="investment">
-  <div class="section-eyebrow">Investment Consulting</div>
-  <h2 class="section-title">일반 상담 vs <em>손영준 Private Banker</em></h2>
-
-  <div class="compare-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th>항목</th>
-          <th>일반 금융사 상담</th>
-          <th>손영준 Private Banker</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>상품 추천 기준</td>
-          <td>판매 실적 및 수수료 중심</td>
-          <td>고객 목적·성향 중심의 선별</td>
-        </tr>
-        <tr>
-          <td>설명 방식</td>
-          <td>복잡한 상품 소개서 전달</td>
-          <td>칼럼니스트의 쉬운 언어와 맥락 설명</td>
-        </tr>
-        <tr>
-          <td>비교 분석</td>
-          <td>✕ 자사 상품에 한정</td>
-          <td>✓ 전 금융사 상품 객관적 비교</td>
-        </tr>
-        <tr>
-          <td>사후 관리</td>
-          <td>✕ 가입 후 소통 단절</td>
-          <td>✓ 지속적인 모니터링 및 리밸런싱</td>
-        </tr>
-        <tr>
-          <td>관계 방식</td>
-          <td>일회성 판매자 → 고객</td>
-          <td>평생 금융 파트너십</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="quote-block">
-    <p>단순히 상품을 가입하라는 권유가 아니라, 제 연령대의 고민을 짚어내고 상황에 맞지 않는 부분은 솔직하게 말씀해주셔서 확실한 신뢰가 생겼습니다. 이제 제 자산 현황을 객관적으로 파악할 수 있게 됐어요.</p>
-    <div class="quote-source">실제 고객 후기 · 30대 직장인</div>
-  </div>
-</section>
-
-<div class="sec-divider"></div>
-
-<!-- ===== 3. 세금 & 절세 전략 ===== -->
-<section class="section" id="tax">
-  <div class="section-eyebrow">Tax Strategy</div>
-  <h2 class="section-title">절세 컨설팅 흐름</h2>
-
-  <div class="steps">
-    <div class="step">
-      <div class="step-num">01</div>
-      <h4>현황 파악</h4>
-      <p>현재 납부 중인 세금 구조, 보유 계좌, 소득 유형을 정확히 파악합니다.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">02</div>
-      <h4>누락 공제 발굴</h4>
-      <p>놓치고 있는 세액공제·소득공제 항목을 빈틈없이 찾아드립니다.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">03</div>
-      <h4>절세 플랜 설계</h4>
-      <p>IRP·ISA·연금저축 납입 한도와 순서를 고객 상황에 맞게 최적화합니다.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">04</div>
-      <h4>장기 전략 수립</h4>
-      <p>증여·상속을 포함한 10년 이상의 장기적인 자산 이전 계획을 세웁니다.</p>
-    </div>
-  </div>
-
-  <div class="quote-block">
-    <p>연금과 세금 정리를 한번에 도움받았어요. 제가 얼마나 세금을 더 내고 있었는지 몰랐는데, 체계적인 절세 전략 덕분에 연간 수십만 원을 아끼게 되었습니다. 진작 찾아올 걸 그랬어요!</p>
-    <div class="quote-source">실제 고객 후기 · 50대 직장인</div>
-  </div>
-</section>
-
-<div class="sec-divider"></div>
-
-<!-- ===== CTA ===== -->
+<!-- CTA -->
 <section class="cta">
-  <div class="cta-label">First Consultation Free</div>
-  <h2>어떤 서비스가 필요한지<br><em>모르셔도 됩니다</em></h2>
-  <p>첫 상담에서 현재 상황을 편안하게 들어보고,<br>가장 필요한 것이 무엇인지 함께 찾아드립니다.<br>첫 상담은 무료입니다.</p>
+  <h2>다음 후기의 주인공,<br><em>당신이 될 수 있습니다</em></h2>
+  <p>첫 상담은 무료입니다.<br>부담 없이 시작해 보세요.</p>
   <a href="consult.html" class="btn-gold">무료 상담 신청하기</a>
 </section>
 
-<!-- ===== FOOTER ===== -->
-<footer>YJ · SON Wealth Consulting &nbsp;·&nbsp; © 2026 손영준 자산관리 컨설팅</footer>
+<!-- FOOTER -->
+<footer>YJ · SON Wealth Consulting &nbsp;·&nbsp; &copy; 2025 손영준 자산관리 컨설팅</footer>
 
 </body>
 </html>
